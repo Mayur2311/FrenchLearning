@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/flogo"
+            />
+        <TextView
+            android:id="@+id/main"
+            android:layout_below="@id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Profile"
+            android:textSize="24sp"
+            android:textColor="@color/mainAppColor"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            />
+
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_below="@+id/main"
+            android:padding="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint=" First Name"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/mainAppColor"
+            android:drawableLeft="@drawable/account"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_below="@+id/firstName"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint=" Last Name"
+            android:textColorHint="@color/black"
+            android:backgroundTint="@color/mainAppColor"
+            android:drawableLeft="@drawable/account"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/mobile"
+            android:backgroundTint="@color/mainAppColor"
+            android:layout_below="@+id/lastName"
+            android:layout_marginLeft="20dp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:hint=" Mobile No."
+            android:textColorHint="@color/black"
+            android:drawableLeft="@drawable/phone"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/mobile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"
+            android:background="@color/mainAppColor"
+            android:text="UPDATE PROFILE"/>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/signup"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

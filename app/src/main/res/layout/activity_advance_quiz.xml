@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advance_quiz">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/line1">
+
+        <TextView
+            android:id="@+id/advance_quiz"
+            android:layout_width="278dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="56dp"
+            android:background="#0B4CEF"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:text="Test"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/flogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toEndOf="@id/advance_quiz"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_question"
+        android:layout_width="409dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="25dp"
+        android:text="Your question is here ?"
+        android:textColor="#0B4CEF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+    <Button
+        android:id="@+id/btn_option1"
+        android:layout_width="363dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#3F51B5"
+        android:paddingVertical="10dp"
+        android:text="Option A"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_question" />
+
+    <Button
+        android:id="@+id/btn_option2"
+        android:layout_width="363dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="10dp"
+        android:text="Option B"
+        android:backgroundTint="#3F51B5"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_option1" />
+
+    <Button
+        android:id="@+id/btn_option3"
+        android:layout_width="363dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="10dp"
+        android:text="Option C"
+        android:backgroundTint="#3F51B5"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_option2" />
+
+    <Button
+        android:id="@+id/btn_option4"
+        android:layout_width="363dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="10dp"
+        android:text="Option D"
+        android:backgroundTint="#3F51B5"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_option3" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_next"-->
+<!--        android:layout_width="104dp"-->
+<!--        android:layout_height="61dp"-->
+<!--        android:layout_marginTop="110dp"-->
+<!--        android:backgroundTint="#0B4CEF"-->
+<!--        android:paddingVertical="10dp"-->
+<!--        android:text="Next"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="22sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.908"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_option3" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/score_lable"-->
+<!--        android:layout_width="244dp"-->
+<!--        android:layout_height="52dp"-->
+<!--        android:layout_marginTop="485dp"-->
+<!--        android:paddingLeft="25dp"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:text=""-->
+<!--        android:textColor="#0B4CEF"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.095"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/line1" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

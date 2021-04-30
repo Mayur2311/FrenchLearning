@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_Basic_level"
+            android:icon="@drawable/basic"
+            android:title="Basic Level" />
+        <item
+            android:id="@+id/nav_intermediate_level"
+            android:icon="@drawable/basic"
+            android:title="Intermeddiate Level" />
+        <item
+            android:id="@+id/nav_advance_level"
+            android:icon="@drawable/basic"
+            android:title="Advance Level" />
+        <item
+
+            android:title="Others">
+            <menu>
+                <item
+                    android:id="@+id/updateProfile"
+                    android:icon="@drawable/account"
+                    android:title="Update Profile" />
+                <item
+                    android:id="@+id/nav_myscore"
+                    android:icon="@drawable/quiz"
+                    android:title="My Score" />
+                <item
+                    android:id="@+id/myStatus"
+                    android:icon="@drawable/lock"
+                    android:title="My status"
+                    />
+
+                <item
+                    android:id="@+id/nav_rating"
+                    android:icon="@drawable/rating"
+                    android:title="Rate &amp; Review"
+                    />
+                <item
+                    android:id="@+id/nav_aboutUs"
+                    android:icon="@drawable/aboutus"
+                    android:title="About Us" />
+
+            </menu>
+        </item>
+    </group>
+</menu>

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "979220143099",
+    "project_id": "learningfrench-97495",
+    "storage_bucket": "learningfrench-97495.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979220143099:android:03be12476f9c79c273895e",
+        "android_client_info": {
+          "package_name": "com.example.learnfrench"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979220143099-s0cuf2pplm9dmi06g2uhin271qoopmao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEg0vs4n-CNS4PbnxVYnpZI8e0jZagJ7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "979220143099-s0cuf2pplm9dmi06g2uhin271qoopmao.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979220143099:android:736072d29ab9c8b373895e",
+        "android_client_info": {
+          "package_name": "com.example.learningfrench"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979220143099-s0cuf2pplm9dmi06g2uhin271qoopmao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEg0vs4n-CNS4PbnxVYnpZI8e0jZagJ7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "979220143099-s0cuf2pplm9dmi06g2uhin271qoopmao.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

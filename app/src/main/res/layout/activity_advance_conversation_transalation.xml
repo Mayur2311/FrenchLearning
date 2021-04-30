@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advance_conversation_transalation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#0B4CEF"
+        android:text="Advance Level"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:gravity="center" />
+    <LinearLayout
+        android:id="@+id/firstllayout"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/blueimages" />
+
+        <TextView
+            android:id="@+id/topictv"
+            android:layout_width="300dp"
+            android:layout_height="69dp"
+            android:background="#0B4CEF"
+            android:text="Conversation With Translation"
+            android:paddingTop="3dp"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:layout_weight="1.45"
+            android:gravity="right"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/translation_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Let's see some conversation in French with it's English translation."
+                android:textSize="18sp"
+                android:textColor="@color/teal_700"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/translation_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Take a look at first French conversation between tourist and local person."
+                android:textSize="18sp"
+                android:textColor="@color/teal_700"/>
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="900dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/conversationfirst"
+                />
+
+            <TextView
+                android:id="@+id/translation_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Take a look at second French conversation at cloath shop."
+                android:textSize="18sp"
+                android:textColor="@color/teal_700"/>
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="900dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/conversationsecond"
+                />
+
+            <TextView
+                android:id="@+id/translation_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Read the third and interesting French conversation to buy cheese at shop."
+                android:textSize="18sp"
+                android:textColor="@color/teal_700"/>
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="900dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/conversationthird"
+                />
+
+            <TextView
+                android:id="@+id/translation_text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Read the following French conversation between two people."
+                android:textSize="18sp"
+                android:textColor="@color/teal_700"/>
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="900dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/conversationfourth"
+                />
+
+            <TextView
+                android:id="@+id/translation_text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Read the following French conversation about Music."
+                android:textSize="18sp"
+                android:textColor="@color/teal_700"/>
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="900dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/conversationfifth"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/prevButton"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="05dp"
+                android:layout_marginRight="05dp"
+                android:background="@color/white"
+                android:text="Prev" />
+
+            <Button
+                android:id="@+id/homeButton"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:text="Home" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="05dp"
+                android:layout_marginRight="05dp"
+                android:background="@color/white"
+                android:text="Next" />
+        </LinearLayout>
+<!--        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="viewStart"
+                        android:textSize="20dp"
+                        android:text=" M :C'était sympa la fête de samedi hein?\n
+N :Oui c'était top. Michael a vraiment assuré !\n
+M :ui... c'est dommage que Marc ne soit pas venu.\n
+N :Apparemment, il n'a pas été invité... \n
+M :C'est vrai ? Comment tu le sais ? \n
+N :C'est Marie qui me l'a dit. Elle l'a appris par Philippe, qui l'a su par Nadège. \n
+M :Mais ... pourquoi Michael ne l'a pas invité ? \n"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>   -->
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

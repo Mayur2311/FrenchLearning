@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.intermediatelevel.IntermediateFragment">
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="Continue to
+                      french with
+          basic course"
+        android:textColor="#0B4CEF"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/flogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@id/tagline"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imgwords"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@id/tagline"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/blueimages"
+        />
+    <Button
+        android:id="@+id/btnwords"
+        android:layout_width="290dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="40dp"
+        android:background="#0B4CEF"
+        android:text="Words"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/imgwords"
+        app:layout_constraintTop_toBottomOf="@id/tagline" />
+    <ImageView
+        android:id="@+id/imgsimple"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@id/btnwords"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/blueimages"
+        />
+    <Button
+        android:id="@+id/btnsimple"
+        android:layout_width="290dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="40dp"
+        android:background="#0B4CEF"
+        android:text="Simple Sentences"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/imgsimple"
+        app:layout_constraintTop_toBottomOf="@id/btnwords" />
+    <ImageView
+        android:id="@+id/imggrammar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toBottomOf="@id/btnsimple"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/blueimages"
+        />
+
+    <Button
+        android:id="@+id/btngrammar"
+        android:layout_width="290dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="40dp"
+        android:background="#0B4CEF"
+        android:text="Grammar"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/imggrammar"
+        app:layout_constraintTop_toBottomOf="@id/btnsimple" />
+
+    <Button
+        android:id="@+id/Quiz"
+        android:layout_width="175dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="43dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="#3F8807"
+        android:text="Quiz"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imggrammar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

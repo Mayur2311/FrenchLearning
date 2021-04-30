@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advance_complex_question">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#0B4CEF"
+            android:text="Advance Level"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:gravity="center" />
+        <LinearLayout
+            android:id="@+id/firstllayout"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@drawable/blueimages" />
+
+            <TextView
+                android:id="@+id/topictv"
+                android:layout_width="300dp"
+                android:layout_height="69dp"
+                android:background="#0B4CEF"
+                android:text="Asking For Clarification"
+                android:paddingTop="14dp"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center"
+                android:layout_weight="1.45"
+                android:gravity="right"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/clarification_pronunciation"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:text="Pronunciation:"
+                android:layout_marginLeft="05dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/play"
+                android:layout_width="125dp"
+                android:layout_height="55dp"
+                android:onClick="play"
+                android:text="Play"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/pause"
+                android:layout_width="125dp"
+                android:layout_height="55dp"
+                android:onClick="pause"
+                android:layout_marginLeft="05dp"
+                android:text="Pause"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/clarification_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Let's learn some sentences for help or clarification in french."
+                android:textSize="18sp"
+                android:textColor="@color/teal_700"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_volume"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:text="Volume"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"/>
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_scrub"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:text="Scrub"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+        <SeekBar
+            android:id="@+id/scrub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="370dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:text="1. Excusez-moi de vous déranger, monsieur/madame, mais j'ai un problème."
+                        android:textColor="@color/teal_700"
+                        android:textSize="25dp"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="05dp"
+                        android:layout_marginRight="10dp"
+                        android:text="E. Sorry for bothering you, mister/miss, but I have a problem."
+                        android:textAlignment="viewStart"
+                        android:textSize="20dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="370dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:text="2. Est-ce que je peux vous poser une question ?"
+                        android:textColor="@color/teal_700"
+                        android:textSize="25dp"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="05dp"
+                        android:layout_marginRight="10dp"
+                        android:text="E. Can I ask you a question?"
+                        android:textAlignment="viewStart"
+                        android:textSize="20dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="370dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:text="3. Qu'est-ce que vous avez dit ?"
+                        android:textColor="@color/teal_700"
+                        android:textSize="25dp"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="05dp"
+                        android:layout_marginRight="10dp"
+                        android:text="E. What did you say?"
+                        android:textAlignment="viewStart"
+                        android:textSize="20dp"/>
+                    </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="370dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:text="4. Pourriez-vous répéter, s'il vous plaît ?"
+                        android:textColor="@color/teal_700"
+                        android:textSize="25dp"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="05dp"
+                        android:layout_marginRight="10dp"
+                        android:text="E. Can you repeat that, please?"
+                        android:textAlignment="viewStart"
+                        android:textSize="20dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="370dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:text="5. Je n'ai pas entendu ce que vous avez dit."
+                        android:textColor="@color/teal_700"
+                        android:textSize="25dp"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="05dp"
+                        android:layout_marginRight="10dp"
+                        android:text="E. I didn't hear what you said."
+                        android:textAlignment="viewStart"
+                        android:textSize="20dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="370dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:text="6. Comment est-ce qu'on écrit ça ? / Ça s'écrit comment ?"
+                        android:textColor="@color/teal_700"
+                        android:textSize="25dp"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="05dp"
+                        android:layout_marginRight="10dp"
+                        android:text="E. How is that written?"
+                        android:textAlignment="viewStart"
+                        android:textSize="20dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="370dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:text="7. Comment est-ce qu'on prononce ça ? / Ça se prononce comment ?"
+                        android:textColor="@color/teal_700"
+                        android:textSize="25dp"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="05dp"
+                        android:layout_marginRight="10dp"
+                        android:text="E. How is that pronounced?"
+                        android:textAlignment="viewStart"
+                        android:textSize="20dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="370dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:text="8. Qu'est-ce que ça veut dire? / Ça veut dire quoi?"
+                        android:textColor="@color/teal_700"
+                        android:textSize="25dp"/>
+                </TableRow>
+                <TableRow>
+                    <Button
+                        android:layout_width="400dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="05dp"
+                        android:layout_marginRight="10dp"
+                        android:text="E. What does that mean?"
+                        android:textAlignment="viewStart"
+                        android:textSize="20dp"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/prevButton"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="05dp"
+                android:layout_marginRight="05dp"
+                android:background="@color/white"
+                android:text="Prev" />
+
+            <Button
+                android:id="@+id/homeButton"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:text="Home" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="05dp"
+                android:layout_marginRight="05dp"
+                android:background="@color/white"
+                android:text="Next" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

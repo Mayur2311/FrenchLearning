@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.learnfrench.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_Basic_level"
+            app:destination="@id/nav_Basic_level" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_advance_level"
+            app:destination="@id/nav_advance_level" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_intermediate_level"
+            app:destination="@id/nav_intermediate_level" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_advance_level"
+        android:name="com.example.learnfrench.ui.advancelevel.AdvanceFragment"
+        android:label="Advance Level"
+        tools:layout="@layout/fragment_advance">
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Basic_level"
+        android:name="com.example.learnfrench.ui.basicLevel.BasicFragment"
+        android:label="Basic Level"
+        tools:layout="@layout/fragment_basic">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_intermediate_level"
+        android:name="com.example.learnfrench.ui.intermediatelevel.IntermediateFragment"
+        android:label="Intermediate Level"
+        tools:layout="@layout/fragment_intermediate">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_aboutUs"
+        android:name="com.example.learnfrench.AboutUs"
+        android:label="About Us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/nav_myscore"
+        android:name="com.example.learnfrench.MyScore"
+        android:label="My Score"
+        tools:layout="@layout/fragment_my_score" />
+    <fragment
+        android:id="@+id/myStatus"
+        android:name="com.example.learnfrench.MyStatus"
+        android:label="My Status"
+        tools:layout="@layout/fragment_my_status" />
+    <fragment
+        android:id="@+id/updateProfile"
+        android:name="com.example.learnfrench.UpdateProfile"
+        android:label="Update Profile"
+        tools:layout="@layout/fragment_update_profile" />
+    <fragment
+        android:id="@+id/nav_rating"
+        android:name="com.example.learnfrench.rating"
+        android:label="Rate &amp; Review"
+        tools:layout="@layout/fragment_rating" />
+
+
+</navigation>
